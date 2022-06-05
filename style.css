@@ -214,12 +214,12 @@ footer {
 
 footer .container {
   display: flex;
+  justify-content: space-between;
 }
 
 footer .column {
   width: 100%;
   max-width: 350px;
-  padding-right: 50px;
 }
 
 footer .column h3 {
