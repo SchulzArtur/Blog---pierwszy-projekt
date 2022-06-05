@@ -1,0 +1,255 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato";
+}
+
+:root {
+  --primary-color: #092d5d;
+  --secondary-color: #ee1b2e;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Menu */
+
+nav.menu {
+  background-color: var(--primary-color);
+}
+
+nav.menu ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+nav.menu ul li {
+  padding: 0 20px;
+}
+
+nav.menu ul li a {
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  line-height: 80px;
+  text-transform: uppercase;
+}
+
+nav.menu ul li a:hover {
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+.logo {
+  display: block;
+  text-align: center;
+  font-size: 50px;
+  padding: 25px 0;
+  font-weight: 800;
+}
+
+.logo a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+/* Hero section  */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+body .swiper-button-prev {
+  background-color: var(--primary-color);
+  width: 40px;
+  height: 40px;
+  margin-left: 30px;
+  border-radius: 50%;
+}
+
+body .swiper-button-prev:hover {
+  background-color: var(--secondary-color);
+}
+
+body .swiper-button-next {
+  background-color: var(--primary-color);
+  width: 40px;
+  height: 40px;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+
+body .swiper-button-next:hover {
+  background-color: var(--secondary-color);
+}
+
+body .swiper-button-prev:after,
+body .swiper-button-next:after {
+  font-size: 15px;
+  color: #fff;
+}
+
+/* Article section - home page*/
+
+.main {
+  padding-top: 40px;
+  display: flex;
+}
+.main .container {
+  display: flex;
+}
+
+.main .post-list {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main .post-list .thumbnail {
+  object-fit: cover;
+}
+
+.main .post-list .thumbnail img {
+  width: 400px;
+  height: 200px;
+}
+
+.main .post-list article {
+  display: flex;
+  border-bottom: 1px solid var(--primary-color);
+  padding-block: 30px;
+}
+
+.main .post-list article:last-of-type {
+  border-bottom: 0px solid var(--primary-color);
+}
+
+.main .post-list article .content {
+  padding: 20px;
+}
+
+.main .post-list article .content h2 {
+  padding-bottom: 20px;
+}
+
+.main .post-list article .content p {
+  padding-bottom: 40px;
+  text-decoration: none;
+}
+
+.main .post-list article .content .button-post {
+  text-decoration: none;
+  padding: 10px 30px;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.main .post-list article .content .button-post:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  transition: ease-in-out 0.4s;
+}
+
+/* Sidebar */
+
+.main .sidebar {
+  width: 20%;
+  background-color: #f6f6f6;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px 15px;
+}
+
+.main .sidebar img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.main .sidebar h3 {
+  padding-block: 20px;
+}
+
+.main .sidebar .category {
+  display: flex;
+  flex-direction: column;
+}
+
+.main .sidebar .category ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.main .sidebar .category a {
+  color: var(--primary-color);
+  text-decoration: none;
+  line-height: 25px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.main .sidebar .category a:hover {
+  padding-bottom: 1px;
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--primary-color);
+  display: block;
+  padding-block: 30px;
+}
+
+footer .container {
+  display: flex;
+}
+
+footer .column {
+  width: 100%;
+  max-width: 350px;
+  padding-right: 50px;
+}
+
+footer .column h3 {
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+footer .column p {
+  color: #fff;
+}
+
+.main .sidebar .category ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .column .category-footer ul {
+  list-style-type: none;
+}
+
+footer .column .category-footer a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 25px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+footer .column .category-footer a:hover {
+  padding-bottom: 1px;
+  border-bottom: 2px solid var(--secondary-color);
+}
